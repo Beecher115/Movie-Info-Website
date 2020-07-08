@@ -1,0 +1,102 @@
+<!DOCTTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title> I am DB </title>
+    <meta charset = "UTF-8">
+    <meta name = "description" content= "Personally selected movies recommended
+    by movie genres."/>
+    <meta name = "keyword" content= "movie, film, cinema, genre, film genre,
+    movie genre, recommended movie, recommended film"/>
+    <meta name="author" content="Diarmaid Beecher">
+
+
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css"></style>
+
+    <!---Array storing genres-->
+    <script>
+      var genres = ["Historical", "Crime", "Sci-Fi", "Comedy"];
+    </script>
+  </head>
+
+  <body>
+    <!--Star symbols <i class="material-icons" style="color:yellow;">star</i>
+    <i class="material-icons">star_border</i>
+    <i class="material-icons">star_half</i> -->
+
+    <!---Background Image and Logo--------------------------------------------->
+    <header class="background">
+      <div class="header">
+        <p>I am DB</p>
+      </div>
+    </header>
+
+    <!---Navigation Bar------------------------------------------------------->
+    <nav id="navbar" class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"> Genres
+            <i class="material-icons" style="font-size:18px;">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-content">
+            <a href="genres/genre1.html" id="genre1"></a>
+            <a href="genres/genre2.html" id="genre2"></a>
+            <a href="genres/genre3.html" id="genre3"></a>
+            <a href="genres/genre4.html" id="genre4"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---Main Body------------------------------------------------------------->
+    <section class="home-content">
+      <div>
+        <h3 class="home-title"> Welcome to I am DB! </h3>
+        Select one of four movie genres to be presented with films carefully
+        selected as recommended viewing. <br><br>
+        Unsure of what film to pick? Why not take the time to view the trailer,
+        maybe look for your favourite director, writer, or actor, or just follow
+        our personal rating.<br><br>
+        Grab your popcorn, drink, or any other condiment and settle in for an
+        evening of quality cinematic productions.
+      </div>
+    </section>
+
+    <!---Footer---------------------------------------------------------------->
+    <footer>
+      <div class="footnote">Not associated with IMBD, intended as a parody for educational purposes.</div>
+    </footer>
+
+    <!---Scripts--------------------------------------------------------------->
+    <!--Script to fill dropdown menu with genres-->
+    <script>
+      var id;
+      genres.forEach(insertDropdown);
+
+      function insertDropdown(value, index){
+        id = "genre" + (index + 1);
+        document.getElementById(id).innerHTML = value;
+      }
+    </script>
+
+    <!--Script to stick navgation menu to top of page-->
+    <script>
+      window.onscroll = function() {stickNavbar()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function stickNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("stick");
+        } else {
+          navbar.classList.remove("stick");
+        }
+      }
+    </script>
+
+  </body>
+</html>

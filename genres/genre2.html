@@ -1,0 +1,228 @@
+<!DOCTTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title></title>
+    <meta charset = "UTF-8">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css"></style>
+
+    <!---Array storing genres and movies-->
+    <script>
+      var genres = ["Historical", "Crime", "Sci-Fi", "Comedy"];
+      document.title = genres[1];
+
+      var movies = ["A Clockwork Orange", "Lawless", "The Dark Knight"];
+    </script>
+  </head>
+
+  <body>
+    <!---Background Image and Logo--------------------------------------------->
+    <header class="background">
+      <div class="header">
+        <p>I am DB</p>
+      </div>
+    </header>
+
+    <!---Navigation Bar-------------------------------------------------------->
+    <nav id="navbar" class="navbar">
+        <a href="../home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"> Genres
+            <i class="material-icons" style="font-size:18px;">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-content">
+            <a href="genre1.html" id="genre1"></a>
+            <a href="genre2.html" id="genre2"></a>
+            <a href="genre3.html" id="genre3"></a>
+            <a href="genre4.html" id="genre4"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---Main Body------------------------------------------------------------->
+    <section class="content">
+      <div id="tab" class="tab">
+        <button class="tablinks" onclick="openMovie(event, 'movieOne')" id="movie1"></button>
+        <button class="tablinks" onclick="openMovie(event, 'movieTwo')" id="movie2"></button>
+        <button class="tablinks" onclick="openMovie(event, 'movieThree')" id="movie3"></button>
+      </div>
+
+      <!---Movie 1------------------------------------------------------------->
+      <div id="movieOne" class="tabcontent">
+        <img src="../images/genre2/A Clockwork Orange poster.png" alt="A Clockwork Orange poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          In the future, a sadistic gang leader is imprisoned and volunteers for
+          a conduct-aversion experiment, but it doesn't go as planned.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Director:</h4> &nbsp;
+          Stanley Kubrick
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Stanley Kubrick (screenplay), Anthony Burgess (book)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Malcolm McDowell, Patrick Magee, Michael Bates
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star star</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SPRzm8ibDQ8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!---Movie 2------------------------------------------------------------->
+      <div id="movieTwo" class="tabcontent">
+        <img src="../images/genre2/Lawless poster.jpg" alt="Lawless poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          Set in Depression-era Franklin County, Virginia, a trio of bootlegging
+          brothers are threatened by a new special deputy and other authorities
+          angling for a cut of their profits.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Director:</h4> &nbsp;
+          John Hillcoat
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Nick Cave (screenplay), Matt Bondurant (book)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Tom Hardy, Shia LaBeouf, Guy Pearce
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star star_border</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HibcC7w5l1g"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!---Movie 3------------------------------------------------------------->
+      <div id="movieThree" class="tabcontent">
+        <img src="../images/genre2/The Dark Knight poster.jpg" alt="The Dark Knight poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          When the menace known as the Joker wreaks havoc and chaos on the people
+          of Gotham, Batman must accept one of the greatest psychological and
+          physical tests of his ability to fight injustice.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Director:</h4> &nbsp;
+          Christopher Nolan
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Jonathan Nolan (screenplay), Christopher Nolan (screenplay)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Christian Bale, Heath Ledger, Aaron Eckhart
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star star_half</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EXeTwQWrcwY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer---------------------------------------------------------------->
+    <footer>
+      <div class="footnote">Not associated with IMBD, intended as a parody for educational purposes.</div>
+    </footer>
+
+    <!---Scripts--------------------------------------------------------------->
+    <!--Script to fill dropdown menu with genres-->
+    <script>
+      var id;
+      genres.forEach(insertDropdown);
+
+      function insertDropdown(value, index){
+        id = "genre" + (index + 1);
+        document.getElementById(id).innerHTML = value;
+      }
+    </script>
+
+    <!--Script to stick navgation menu to top of page-->
+    <script>
+      window.onscroll = function() {stickNavbar()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function stickNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("stick");
+        } else {
+          navbar.classList.remove("stick");
+        }
+      }
+    </script>
+
+    <!--Script to fill verticle tabs with movies-->
+    <script>
+      var idMovie;
+      movies.forEach(insertDropdown);
+
+      function insertDropdown(value, index){
+        idMovie = "movie" + (index + 1);
+        document.getElementById(idMovie).innerHTML = value;
+        document.getElementById(idMovie).innerHTML = value;
+      }
+    </script>
+
+    <!--Script for vertical tabs-->
+    <script>
+      function openMovie(evt, movieName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      document.getElementById(movieName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      document.getElementById("movie1").click();
+    </script>
+  </body>
+</html>

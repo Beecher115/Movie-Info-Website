@@ -1,0 +1,217 @@
+body {
+      font-family: Arial;
+      background-color: lightgrey;
+    }
+
+
+/*********Header and background image*********/
+.background {
+  background-image: url("images/cinema.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 5px;
+  border: solid;
+  padding: 20px;
+  background-color: #800000;
+}
+
+
+/*********Navigation bar*********/
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/*********Dropdown menu*********/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkgrey;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: inherit
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+/*********Home page*********/
+.home-content {
+  margin: 10px 10%;
+  padding: 5%;
+  border: 5px solid #800000;
+  height: auto;
+  background-color: white;
+  font-size: 20px;
+}
+
+.home-title {
+  font-size: 30px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+/*********Vertical tabs*********/
+.tab {
+  float: left;
+  background-color: darkgrey;
+  flex: 10%;
+  height: 180px;
+  position: sticky;
+  top: 66px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 20px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.tab button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.tab button.active {
+  background-color: #800000;
+  color: white;
+}
+
+.tabcontent {
+  float: right;
+  padding: 0px 10px;
+  border: 5px solid #800000;
+  flex: 90%;
+  height: auto;
+  background-color: white;
+  font-size: 18px;
+}
+
+
+/*********Main content*********/
+.content {
+  padding-top: 10px;
+  padding-bottom: 5%;
+  display: flex;
+}
+
+img {
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 0px;
+  padding: 10px 5px;
+}
+
+.summary {
+  padding-left: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid #800000;
+}
+
+.info {
+  display: inline-block;
+  border-style: none solid;
+  border-color: #800000;
+  border-width: 2px;
+  padding: 5px 10px;
+}
+
+.inline {
+  display: inline;
+}
+
+.trailer {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px 5px;
+  margin-top: 15px;
+  border-top: solid #800000;
+}
+
+iframe {
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+
+/*********Footer*********/
+.footnote {
+  background: black;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  color: white;
+}

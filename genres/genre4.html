@@ -1,0 +1,228 @@
+<!DOCTTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title></title>
+    <meta charset = "UTF-8">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css"></style>
+
+    <!---Array storing genres and movies-->
+    <script>
+      var genres = ["Historical", "Crime", "Sci-Fi", "Comedy"];
+      document.title = genres[3];
+
+      var movies = ["Airplane!", "Anchorman", "In Bruges"];
+    </script>
+  </head>
+
+  <body>
+    <!---Background Image and Logo--------------------------------------------->
+    <header class="background">
+      <div class="header">
+        <p>I am DB</p>
+      </div>
+    </header>
+
+    <!---Navigation Bar-------------------------------------------------------->
+    <nav id="navbar" class="navbar">
+        <a href="../home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"> Genres
+            <i class="material-icons" style="font-size:18px;">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-content">
+            <a href="genre1.html" id="genre1"></a>
+            <a href="genre2.html" id="genre2"></a>
+            <a href="genre3.html" id="genre3"></a>
+            <a href="genre4.html" id="genre4"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---Main Body------------------------------------------------------------->
+    <section class="content">
+      <div id="tab" class="tab">
+        <button class="tablinks" onclick="openMovie(event, 'movieOne')" id="movie1"></button>
+        <button class="tablinks" onclick="openMovie(event, 'movieTwo')" id="movie2"></button>
+        <button class="tablinks" onclick="openMovie(event, 'movieThree')" id="movie3"></button>
+      </div>
+
+      <!---Movie 1------------------------------------------------------------->
+      <div id="movieOne" class="tabcontent">
+        <img src="../images/genre4/Airplane! poster.jpg" alt="Airplane! poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          A man afraid to fly must ensure that a plane lands safely after the
+          pilots become sick.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Directors:</h4> &nbsp;
+          Jim Abrahams, David Zucker, Jerry Zucker
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Jim Abrahams (screenplay), David Zucker (screenplay), Jerry Zucker (screenplay)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Robert Hays, Julie Hagerty, Leslie Nielsen
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star star</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HMnVs287AJ4"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!---Movie 2------------------------------------------------------------->
+      <div id="movieTwo" class="tabcontent">
+        <img src="../images/genre4/Anchorman poster.jpg" alt="Anchorman poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          Ron Burgundy is San Diego's top-rated newsman in the male-dominated
+          broadcasting of the 1970s, but that's all about to change for Ron and
+          his cronies when an ambitious woman is hired as a new anchor.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Director:</h4> &nbsp;
+          Adam McKay
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Will Ferrell (screenplay), Adam McKay (screenplay)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Will Ferrell, Christina Applegate, Steve Carell
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star star_border</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QvJ1K0_JzFI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!---Movie 3------------------------------------------------------------->
+      <div id="movieThree" class="tabcontent">
+        <img src="../images/genre4/In Bruges poster.jpg" alt="In Bruges poster"
+          width="220px" height="300px">
+        <h3 class="title">Summary</h3>
+        <div class="summary">
+          Guilt-stricken after a job gone wrong, hitman Ray and his partner await
+          orders from their ruthless boss in Bruges, Belgium, the last place in
+          the world Ray wants to be.
+        </div>
+
+        <div class="info">
+          <h4 class="inline">Director:</h4> &nbsp;
+          Martin McDonagh
+        </div>
+        <div class="info">
+          <h4 class="inline">Writers:</h4> &nbsp;
+          Martin McDonagh (screenplay)
+        </div>
+        <div class="info">
+          <h4 class="inline">Starring: </h4> &nbsp;
+          Colin Farrell, Brendan Gleeson, Ciarán Hinds
+        </div>
+        <div class="info">
+          <h4 class="inline">Rating:</h4> &nbsp;
+          <i class="material-icons" style="font-size:16px;color:gold;">star star star star_half star_border</i>
+        </div>
+
+        <div>
+          <h3 class="Trailer">Trailer: </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/p-gG2qo_l_A"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer---------------------------------------------------------------->
+    <footer>
+      <div class="footnote">Not associated with IMBD, intended as a parody for educational purposes.</div>
+    </footer>
+
+    <!---Scripts--------------------------------------------------------------->
+    <!--Script to fill dropdown menu with genres-->
+    <script>
+      var id;
+      genres.forEach(insertDropdown);
+
+      function insertDropdown(value, index){
+        id = "genre" + (index + 1);
+        document.getElementById(id).innerHTML = value;
+      }
+    </script>
+
+    <!--Script to stick navgation menu to top of page-->
+    <script>
+      window.onscroll = function() {stickNavbar()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function stickNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("stick");
+        } else {
+          navbar.classList.remove("stick");
+        }
+      }
+    </script>
+
+    <!--Script to fill verticle tabs with movies-->
+    <script>
+      var idMovie;
+      movies.forEach(insertDropdown);
+
+      function insertDropdown(value, index){
+        idMovie = "movie" + (index + 1);
+        document.getElementById(idMovie).innerHTML = value;
+        document.getElementById(idMovie).innerHTML = value;
+      }
+    </script>
+
+    <!--Script for vertical tabs-->
+    <script>
+      function openMovie(evt, movieName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      document.getElementById(movieName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      document.getElementById("movie1").click();
+    </script>
+  </body>
+</html>
